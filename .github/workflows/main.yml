@@ -1,0 +1,39 @@
+name: Deploy
+
+# トリガーとブランチを指定
+on:
+  push:
+    branches:
+    - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: install
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Build App
+        run: "yarn docs:build"
+
+      - name: Deploy
+        uses: peaceiris/avtions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
