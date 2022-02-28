@@ -15,6 +15,7 @@ VuepressをVue3、Vite対応させたもの。
 .vitepress/sidebar.jsを作成して、config.jsで下記のように設定する
 
 sidebar.js
+
 ```js
 export function getGuideSidebar() {
     return [

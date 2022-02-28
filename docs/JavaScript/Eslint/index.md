@@ -19,6 +19,7 @@ yarn add -D eslint eslint-config-google eslint-config-prettier eslint-plugin-pre
 ## 設定
 
 ルートディレクトリに`.eslintrc.jsを作成し、下記を記載する。
+
 `npx eslint --init` でもファイルを作成することができるが、ぶっちゃけコピペの方が早い。
 
 ```javascript

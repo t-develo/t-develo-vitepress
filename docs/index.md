@@ -6,6 +6,6 @@ sidebar: true
 
 Topページ
 
-- [JavaScript]()
+- [JavaScript](JavaScript/index.md)
   - [JavaScript/Eslint](JavaScript/Eslint/index.md)
 - [Vitepress](Vitepress/index.md)
