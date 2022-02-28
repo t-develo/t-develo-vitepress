@@ -2,6 +2,8 @@
 
 VSCodeでEslintを使って開発を行う際のメモ
 
+Prettierについては[こちら](/JavaScript/Prettier/)
+
 ## インストール
 
 下記コマンドでインストール
