@@ -6,6 +6,6 @@ sidebar: 'auto'
 
 Topページ
 
-- [JavaScript](/JavaScript/)
-  - [JavaScript/Eslint](/JavaScript/Eslint/index.md)
-- [Vitepress](/Vitepress/index.md)
+- [JavaScript]()
+  - [JavaScript/Eslint](JavaScript/Eslint/index.md)
+- [Vitepress](Vitepress/index.md)

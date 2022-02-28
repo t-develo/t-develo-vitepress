@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as s,a as r}from"./app.aab483cd.js";const u='{"title":"Vitepress","description":"","frontmatter":{},"headers":[{"level":2,"title":"Markdown Extensions","slug":"markdown-extensions"}],"relativePath":"Vitepress/index.md"}',a={},n=r("",6),o=[n];function i(d,p,_,c,h,l){return s(),t("div",null,o)}var f=e(a,[["render",i]]);export{u as __pageData,f as default};
