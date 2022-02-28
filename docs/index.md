@@ -1,6 +1,6 @@
 ---
 navbar: true
-sidebar: 'auto'
+sidebar: true
 ---
 # Hello VitePress
 
