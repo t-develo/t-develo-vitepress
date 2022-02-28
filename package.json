@@ -4,11 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.10.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "prettier": "^2.5.1",
     "vitepress": "^0.22.3"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
-  }
+  },
+  "dependencies": {}
 }

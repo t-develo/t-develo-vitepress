@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Eslintの設定 | VitePress Pages</title>
+    <meta name="description" content="A VitePress site">
+    <link rel="stylesheet" href="/t-develo-vitepress/assets/style.c3210e46.css">
+    <link rel="modulepreload" href="/t-develo-vitepress/assets/app.6953e60b.js">
+    <link rel="modulepreload" href="/t-develo-vitepress/assets/JavaScript_Eslint_index.md.d7267ddd.lean.js">
+    
+    <meta name="twitter:title" content="Eslintの設定 | VitePress Pages">
+  <meta property="og:title" content="Eslintの設定 | VitePress Pages">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/t-develo-vitepress/" aria-label="VitePress Pages, back to home" data-v-675d8756 data-v-cc01ef16><!----> VitePress Pages</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><!----></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><!----><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#インストール">インストール</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#設定">設定</a><!----></li><!--]--></ul><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h1 id="eslintの設定" tabindex="-1">Eslintの設定 <a class="header-anchor" href="#eslintの設定" aria-hidden="true">#</a></h1><p>VSCodeでEslintを使って開発を行う際のメモ</p><h2 id="インストール" tabindex="-1">インストール <a class="header-anchor" href="#インストール" aria-hidden="true">#</a></h2><p>下記コマンドでインストール</p><div class="language-powershell"><pre><code>npm i <span class="token operator">--</span><span class="token function">save-dev</span> eslint eslint-config-google eslint-config-prettier eslint-plugin-prettier
+</code></pre></div><p><code>yarn</code>なら下記</p><div class="language-powershell"><pre><code>yarn add <span class="token operator">-</span>D eslint eslint-config-google eslint-config-prettier eslint-plugin-prettier
+</code></pre></div><h2 id="設定" tabindex="-1">設定 <a class="header-anchor" href="#設定" aria-hidden="true">#</a></h2><p>ルートディレクトリに<code>.eslintrc.jsを作成し、下記を記載する。 </code>npx eslint --init` でもファイルを作成することができるが、ぶっちゃけコピペの方が早い。</p><div class="language-javascript"><pre><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">env</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">browser</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">es6</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">node</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;google&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;prettier&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;eslint:recommended&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">parserOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">ecmaVersion</span><span class="token operator">:</span> <span class="token string">&quot;latest&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">sourceType</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-07c132fc><div class="edit" data-v-07c132fc><div class="edit-link" data-v-07c132fc data-v-1ed99556><!----></div></div><div class="updated" data-v-07c132fc><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"javascript_eslint_index.md\":\"d7267ddd\",\"index.md\":\"81806db4\"}")</script>
+    <script type="module" async src="/t-develo-vitepress/assets/app.6953e60b.js"></script>
+    
+  </body>
+</html>
