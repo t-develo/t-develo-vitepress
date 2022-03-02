@@ -81,11 +81,22 @@ export function getGuideSidebar() {
         {
             text: 'Slidev',
             link: '/Slidev/',
-            children: [],
+            children: [
+            ],
         },
         {
             text: 'VitePress',
-            link: '/Vitepress/',
+            link: '/VitePress/',
+            children: [
+                {
+                    text: 'Sidebar',
+                    link: '/VitePress/Sidebar/'
+                },
+                {
+                    text: 'CustomContainers',
+                    link: '/VitePress/CustomContainers/'
+                }
+            ]
         },
     ];
 }
