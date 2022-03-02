@@ -23,3 +23,4 @@ pnpm-debug.log*
 
 #user define
 coverage
+docs/.vitepress/dist
