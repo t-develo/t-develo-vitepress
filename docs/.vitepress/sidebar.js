@@ -1,8 +1,14 @@
 export function getGuideSidebar() {
     return [
         {
-            text: 'VitePress',
-            link: '/Vitepress/',
+            text: 'Docker',
+            link: '/Docker/',
+            children: [
+                {
+                    text: 'FastAPI',
+                    link: '/Docker/FastAPI/',
+                },
+            ],
         },
         {
             text: 'JavaScript',
@@ -19,7 +25,7 @@ export function getGuideSidebar() {
                             text: 'TypeScript',
                             link: '/JavaScript/TypeScript/',
                         },
-                    ]
+                    ],
                 },
                 {
                     text: 'フレームワーク',
@@ -36,17 +42,16 @@ export function getGuideSidebar() {
                             text: 'Jest',
                             link: '/JavaScript/Jest/',
                         },
-                    ]
+                    ],
                 },
                 {
                     text: 'ランタイム',
                     children: [
-
                         {
                             text: 'Node.js',
                             link: '/JavaScript/Node.js/',
                         },
-                    ]
+                    ],
                 },
                 {
                     text: '設定',
@@ -59,9 +64,28 @@ export function getGuideSidebar() {
                             text: 'Prettier',
                             link: '/JavaScript/Prettier/',
                         },
-                    ]
+                    ],
                 },
             ],
+        },
+        {
+            text: 'Python',
+            link: '/Python/',
+            children: [
+                {
+                    text: 'FastAPI',
+                    link: '/Python/FastAPI/',
+                },
+            ],
+        },
+        {
+            text: 'Slidev',
+            link: '/Slidev/',
+            children: [],
+        },
+        {
+            text: 'VitePress',
+            link: '/Vitepress/',
         },
     ];
 }

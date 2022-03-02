@@ -1,0 +1,5 @@
+# Slidev
+
+VueとMarkdownでスライドが作れるモジュール
+
+ViteとVue3で出来てるからVitePressと似た感じ
