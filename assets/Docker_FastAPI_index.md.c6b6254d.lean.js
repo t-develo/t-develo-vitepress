@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as t,a as o}from"./app.2cdaaf46.js";const h='{"title":"FastAPI\u30B3\u30F3\u30C6\u30CA","description":"","frontmatter":{},"headers":[],"relativePath":"Docker/FastAPI/index.md"}',n={},r=o("",8),s=[r];function p(c,i,d,l,_,f){return t(),a("div",null,s)}var u=e(n,[["render",p]]);export{h as __pageData,u as default};
