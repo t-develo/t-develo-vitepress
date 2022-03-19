@@ -1,1 +1,0 @@
-import{_ as n,c as s,o as a,a as p}from"./app.f05b03ca.js";const y='{"title":"Sidebar","description":"","frontmatter":{},"headers":[],"relativePath":"VitePress/Sidebar/index.md"}',t={},e=p("",7),o=[e];function c(r,i,l,u,k,d){return a(),s("div",null,o)}var g=n(t,[["render",c]]);export{y as __pageData,g as default};

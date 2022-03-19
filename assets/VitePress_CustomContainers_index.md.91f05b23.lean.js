@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as a,a as t}from"./app.baf1138c.js";const v='{"title":"Custom Containers","description":"","frontmatter":{},"headers":[],"relativePath":"VitePress/CustomContainers/index.md"}',o={},c=t("",15),p=[c];function e(i,l,u,d,r,k){return a(),s("div",null,p)}var _=n(o,[["render",e]]);export{v as __pageData,_ as default};

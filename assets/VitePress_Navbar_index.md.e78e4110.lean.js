@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as a,a as p}from"./app.baf1138c.js";const g='{"title":"Navbar","description":"","frontmatter":{},"headers":[],"relativePath":"VitePress/Navbar/index.md"}',t={},e=p("",7),o=[e];function r(c,l,i,u,k,d){return a(),s("div",null,o)}var v=n(t,[["render",r]]);export{g as __pageData,v as default};
