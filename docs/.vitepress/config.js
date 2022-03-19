@@ -1,4 +1,5 @@
 import { getGuideSidebar } from './sidebar';
+import { getGuideNavbar } from './navbar.js';
 
 module.exports = {
     lang: 'ja',
@@ -6,7 +7,8 @@ module.exports = {
     base: '/t-develo-vitepress/',
     themeConfig: {
         sidebar: {
-            '/': getGuideSidebar()
+            '/': getGuideSidebar(),
         },
+        nav: getGuideNavbar(),
     },
 };

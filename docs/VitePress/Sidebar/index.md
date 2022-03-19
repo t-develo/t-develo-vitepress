@@ -24,6 +24,8 @@ export function getGuideSidebar() {
 }
 ```
 
+config.js
+
 ```js
 import { getGuideSidebar } from './sidebar';
 

@@ -81,22 +81,38 @@ export function getGuideSidebar() {
         {
             text: 'Slidev',
             link: '/Slidev/',
+        },
+        {
+            text: 'Terraform',
+            link: '/Terraform/',
             children: [
-            ],
+                {
+                    text: 'モジュール化',
+                    link: '/Terraform/Module/'
+                }
+            ]
         },
         {
             text: 'VitePress',
             link: '/VitePress/',
             children: [
                 {
-                    text: 'Sidebar',
-                    link: '/VitePress/Sidebar/'
+                    text: 'CustomContainers',
+                    link: '/VitePress/CustomContainers/',
                 },
                 {
-                    text: 'CustomContainers',
-                    link: '/VitePress/CustomContainers/'
-                }
-            ]
+                    text: 'Navbar',
+                    link: '/VitePress/Navbar/',
+                },
+                {
+                    text: 'Sidebar',
+                    link: '/VitePress/Sidebar/',
+                },
+            ],
         },
+        {
+            text: 'VuePress',
+            link: '/VuePress/'
+        }
     ];
 }
